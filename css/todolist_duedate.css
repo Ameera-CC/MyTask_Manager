@@ -45,6 +45,9 @@ h2{
     cursor: pointer;
 
 }
+input[type="date"] {
+    width: 150px; /* Set an initial width */
+}
 
 .css-task-grid, .css-div-input-grid{
     display: grid;
