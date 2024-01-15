@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+
+h2{
+    color: white;
+    text-align: center;
+
+
+}
+.css-input-text{
+    padding : 8px 15px;
+    font-size: 16px;
+
+}
+
+.css-date-text{
+    padding : 7px 15px;
+    font-size: 16px;
+    color: black;
+}
+
+.css-add-btn{
+    padding : 8px 35px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.css-delete-btn{
+    padding : 8px 25px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.css-task-grid, .css-div-input-grid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 30px;
+    row-gap: 10px;
+    align-items: stretch;
+}
+
+.css-display-task,.css-display-date{
+    padding : 10px 10px;
+    background-color: rgb(212, 189, 206);
+}
+
+.css-div-input-grid{
+    margin-bottom: 10px;
+}
+
+/*Making the div center*/
+.css-main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: rgb(233, 224, 224);
+    flex-direction: column;
+}
+   
+.css-bg-div{
+    background-color: rgb(116, 119, 140);
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+  input::placeholder, input[type="date"] {
+    color: #b9b9b9; /* Replace with your desired color */
+  }
+
+
+  /* , input[type="date"] */
+
+
+ 
+ 
+
+
+
+  @media only screen and (max-width: 600px) 
+  {    
+    .css-task-grid, .css-div-input-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    input[type="date"] {
+        width: 100%; /* Make it take full width on smaller screens */
+    }
+  }
